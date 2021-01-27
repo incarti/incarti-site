@@ -14,7 +14,7 @@
   --body-font: "Poppins", sans-serif;
   --hover-menu-bg: rgba(12 15 25 / 30%);
   --content-title-color: #999ba5;
-  --content-bg: rgb(146 151 179 / 13%);
+  --content-bg: rgba(255, 255, 255, 0.342);
   --button-inactive: rgb(249 250 251 / 55%);
   --dropdown-bg: #21242d;
   --dropdown-hover: rgb(42 46 60);
@@ -48,8 +48,8 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-image: url(mac.jpg);
-  backdrop-filter:  blur(30px);
+  /* background-color: white; */
+  background-image: url(blur.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -118,7 +118,7 @@ body.light-mode:before {
 } */
 
 .app {
-  background-color: var(--theme-bg-color);
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -355,7 +355,6 @@ body.light-mode:before {
   white-space: nowrap;
 }
 .side-menu a {
-  background-color: var( --theme-bg-color);
   text-decoration: none;
   display: flex;
   align-items: center;
