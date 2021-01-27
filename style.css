@@ -7,14 +7,14 @@
 :root {
   --theme-bg-color: rgba(16, 18, 27, 0.4);
   --border-color: rgba(255, 255, 255, 0.267);
-  --theme-color: #f9fafb;
+  --theme-color: #000000;
   --theme-head-color: #000000;
 
   --inactive-color: rgb(174, 177, 189);
   --body-font: "Poppins", sans-serif;
   --hover-menu-bg: rgba(12 15 25 / 30%);
-  --content-title-color: #999ba5;
-  --content-bg: rgba(255, 255, 255, 0.342);
+  --content-title-color: #999ba59c;
+  --content-bg: rgb(243, 243, 243);
   --button-inactive: rgb(249 250 251 / 55%);
   --dropdown-bg: #21242d;
   --dropdown-hover: rgb(42 46 60);
@@ -48,8 +48,8 @@ html {
 
 body {
   font-family: var(--body-font);
-  /* background-color: white; */
-  background-image: url(blur.png);
+  background-color: white;
+  /* background-image: url(blur.png); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -338,9 +338,7 @@ body.light-mode:before {
   }
 }
 
-.side-wrapper + .side-wrapper {
-  margin-top: 20px;
-}
+
 
 .side-title {
   color: var(--inactive-color);
@@ -424,6 +422,7 @@ body.light-mode:before {
   padding: 20px 40px;
   height: 100%;
   overflow: auto;
+      
 }
 @media screen and (max-width: 510px) {
   .content-wrapper {
@@ -435,9 +434,10 @@ body.light-mode:before {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  background-image: url("Screen\ Shot\ 2021-01-27\ at\ 11.24.08\ AM.png");
   border-radius: 14px;
-  padding: 20px 40px;
+  height: 20em;
+  box-shadow: rgba(0, 0, 0, 0.329) 0px 7px 29px 0px; 
+
 }
 @media screen and (max-width: 415px) {
   .content-wrapper-header {
@@ -492,8 +492,10 @@ body.light-mode:before {
   text-overflow: ellipsis;
 }
 
+
 .content-wrapper-context {
-  max-width: 350px;
+ overflow: hidden;
+ max-height: 20em;
 }
 
 .content-button {
@@ -606,6 +608,15 @@ body.light-mode:before {
 .status-circle.green {
   background-color: #3bf083;
 }
+
+.status-circle.white {
+  background-color: #fff;
+}
+
+.status-circle.black {
+  background-color: black;
+}
+
 .status-button {
   font-size: 15px;
   margin-top: 0;
@@ -617,12 +628,12 @@ body.light-mode:before {
   }
 }
 .status-button.open {
-  background: none;
-  color: var(--button-inactive);
+  background: white;
+  color: black;
   /* border: 1px solid var(--button-inactive); */
 }
 .status-button:not(.open):hover {
-  color: #fff;
+  color: rgb(161, 161, 161);
   border-color: #fff;
 }
 
@@ -633,9 +644,9 @@ body.light-mode:before {
 .menu {
   width: 5px;
   height: 5px;
-  background-color: var(--button-inactive);
+  background-color: black;
   border-radius: 50%;
-  box-shadow: 7px 0 0 0 var(--button-inactive), 14px 0 0 0 var(--button-inactive);
+  box-shadow: 7px 0 0 0 black, 14px 0 0 0 black;
   margin: 0 12px;
 }
 
