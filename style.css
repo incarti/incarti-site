@@ -125,8 +125,6 @@ body.light-mode:before {
   overflow: hidden;
   width: 100%;
   border-radius: 0px;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur( 30px);
   font-size: 15px;
   font-weight: 500;
   
@@ -566,9 +564,7 @@ body.light-mode:before {
 .content-section ul li:hover:last-child {
   border-radius: 0 0 13px 13px;
 }
-.content-section ul li + li {
-  /* border-top: 1px solid var(--border-color); */
-}
+
 .content-section ul svg {
   width: 28px;
   border-radius: 6px;
@@ -825,7 +821,7 @@ body.light-mode:before {
 
 .app-card:hover {
   transform: scale(1.02);
-  background-color: ;
+
 }
 .app-card svg {
   width: 28px;
@@ -833,9 +829,7 @@ body.light-mode:before {
   margin-right: 12px;
   flex-shrink: 0;
 }
-.app-card + .app-card {
-  /* margin-left: 20px; */
-}
+
 .app-card span {
   display: flex;
   align-items: center;
