@@ -23,3 +23,32 @@ a{
     margin-right: 1em;
 }
 
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 2em;
+    height: 2em;
+    }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #ffffff;
+  }
+  
+  .svg-icon circle {
+    stroke: #ffffff;
+    stroke-width: 1;
+  }
+
+
+  .enterApp{
+    padding: 0.5rem 1.5rem;
+    border: 3px double transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), radial-gradient(circle at left top, rgb(194, 178, 178), rgb(97, 85, 90));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
