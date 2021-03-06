@@ -122,10 +122,8 @@ body.light-mode:before {
 .app {
 
   height: 100%;
-  display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.705);
-  overflow: hidden;
   width: 100%;
   border-radius: 0px;
   font-size: 15px;
@@ -141,10 +139,9 @@ body.light-mode:before {
   align-items: center;
   flex-shrink: 0;
   height: 58px;
-  width: 98%;
   background-color: white;
   opacity: 0.8;
-  box-shadow: rgba(0, 0, 0, 0.329) 0px 7px 29px 0px; 
+  /* box-shadow: rgba(0, 0, 0, 0.329) 0px 7px 29px 0px;  */
   border-radius: 0.7em;
   margin: 0.7em;
   padding: 0 30px;
@@ -431,7 +428,6 @@ body.light-mode:before {
   color: var(--theme-color);
   padding: 20px 40px;
   height: 100%;
-  overflow: auto;
       
 }
 @media screen and (max-width: 510px) {
@@ -823,15 +819,13 @@ body.light-mode:before {
 
 .apps-card {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   width: calc(100% + 20px);
 }
 
 .app-card {
   display: flex;
   flex-direction: column;
-  width: calc(31%);
   font-size: 16px;
   background-color: var(--content-bg);
   border-radius: 5px;
@@ -841,6 +835,7 @@ body.light-mode:before {
   transition: 0.3s ease;
   margin-bottom: 1em;
   margin-right: 1em !important;
+  min-width: 26em;
 }
 
 .app-card:hover {
@@ -865,6 +860,7 @@ body.light-mode:before {
   margin-top: 20px;
   /* border-bottom: 1px solid var(--border-color); */
   padding-bottom: 20px;
+  line-height: 2em;
 }
 .app-card-buttons {
   display: flex;
@@ -883,7 +879,6 @@ body.light-mode:before {
 }
 @media screen and (max-width: 565px) {
   .app-card {
-    width: calc(100% - 20px);
     margin-top: 20px;
   }
   .app-card + .app-card {
