@@ -842,6 +842,15 @@ body.light-mode:before {
   transform: scale(1.02);
 
 }
+
+.expand:hover {
+  transform: scale(1.02);
+  transition  : all 0.4s ease;
+
+
+
+
+}
 .app-card svg {
   width: 28px;
   border-radius: 6px;

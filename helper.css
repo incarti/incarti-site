@@ -45,9 +45,10 @@ SVG Icons - svgicons.sparkk.fr
 
 
   .enterApp{
-    padding: 0.5rem 1.5rem;
+    padding: 0em 1.5em;
+    margin-right: 2em;
     border: 3px double transparent;
-    border-radius: 80px;
+    border-radius: 10px;
     background-image: linear-gradient(#ffe600, #ffe600);
     background-origin: border-box;
     background-clip: padding-box, border-box;
