@@ -46,6 +46,7 @@ SVG Icons - svgicons.sparkk.fr
 
   .enterApp{
     margin-right: 2em;
+    padding: 1em;
     border: 3px double transparent;
     border-radius: 10px;
     background-image: linear-gradient(#ffe600, #ffe600);
