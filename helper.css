@@ -37,6 +37,10 @@ input#mce-EMAIL {
   border: none;
 }
 
+input#mce-EMAIL {
+  border: none im !important;
+}
+
 #mc_embed_signup .button {
   clear: both;
   background-color: #000;
