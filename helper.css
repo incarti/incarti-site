@@ -38,7 +38,7 @@ border: none;
 }
 
 input#mce-EMAIL {
-border: none im !important;
+border: 1px black solid;
 }
 
 #mc_embed_signup .button {
@@ -106,3 +106,10 @@ h3 {
   margin-right: 1em;
 }
 
+
+
+div#mc_embed_signup {
+  text-align: center;
+  width: min-content;
+  margin: 0 auto;
+}
