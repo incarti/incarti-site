@@ -38,7 +38,7 @@ background-color: white;
 
 input#mce-EMAIL {
 
-border: none;
+  border: none !important;
 }
 
 
