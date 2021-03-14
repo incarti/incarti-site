@@ -856,7 +856,8 @@ input#mce-EMAIL {
   margin-top: -0.5em;
   height: 2em;
   padding: 1em;
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: white;
 }
 
 input#mc-embedded-subscribe {
